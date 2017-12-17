@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Golf ScoreCard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="myjs.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="loadMe()">
+    <div class="scoreCard">
+        <div class="row" id="holeRow">
+            <div class="column1">Hole #</div>
+            <div class="column2">
+                <div class="front9Row">
+                    <div class="holeColumn">1</div>
+                    <div class="holeColumn">2</div>
+                    <div class="holeColumn">3</div>
+                    <div class="holeColumn">4</div>
+                    <div class="holeColumn">5</div>
+                    <div class="holeColumn">6</div>
+                    <div class="holeColumn">7</div>
+                    <div class="holeColumn">8</div>
+                    <div class="holeColumn">9</div>
+                </div>
+            </div>
+            <div class="column3">Out Total</div>
+            <div class="column4">
+                <div class="back9Row">
+                    <div class="holeColumn">10</div>
+                    <div class="holeColumn">11</div>
+                    <div class="holeColumn">12</div>
+                    <div class="holeColumn">13</div>
+                    <div class="holeColumn">14</div>
+                    <div class="holeColumn">15</div>
+                    <div class="holeColumn">16</div>
+                    <div class="holeColumn">17</div>
+                    <div class="holeColumn">18</div>
+                </div>
+            </div>
+            <div class="column5">In Total</div>
+            <div class="column6">Final Score</div>
+        </div>
+        <div class="row" id="yardageRow">
+            <div class="column1">Yardage</div>
+            <div class="column2">
+                <div class="front9Row">
+                    <div class="holeColumn">1</div>
+                    <div class="holeColumn">2</div>
+                    <div class="holeColumn">3</div>
+                    <div class="holeColumn">4</div>
+                    <div class="holeColumn">5</div>
+                    <div class="holeColumn">6</div>
+                    <div class="holeColumn">7</div>
+                    <div class="holeColumn">8</div>
+                    <div class="holeColumn">9</div>
+                </div>
+            </div>
+            <div class="column3">Out Total</div>
+            <div class="column4">
+                <div class="back9Row">
+                    <div class="holeColumn">10</div>
+                    <div class="holeColumn">11</div>
+                    <div class="holeColumn">12</div>
+                    <div class="holeColumn">13</div>
+                    <div class="holeColumn">14</div>
+                    <div class="holeColumn">15</div>
+                    <div class="holeColumn">16</div>
+                    <div class="holeColumn">17</div>
+                    <div class="holeColumn">18</div>
+                </div>
+            </div>
+            <div class="column5">In Total</div>
+            <div class="column6">Total</div>
+        </div>
+        <div class="row" id="handicapRow">
+            <div class="column1">Handicap</div>
+            <div class="column2">
+                <div class="front9Row">
+                    <div class="holeColumn">1</div>
+                    <div class="holeColumn">2</div>
+                    <div class="holeColumn">3</div>
+                    <div class="holeColumn">4</div>
+                    <div class="holeColumn">5</div>
+                    <div class="holeColumn">6</div>
+                    <div class="holeColumn">7</div>
+                    <div class="holeColumn">8</div>
+                    <div class="holeColumn">9</div>
+                </div>
+            </div>
+            <div class="column3">Out Total</div>
+            <div class="column4">
+                <div class="back9Row">
+                    <div class="holeColumn">10</div>
+                    <div class="holeColumn">11</div>
+                    <div class="holeColumn">12</div>
+                    <div class="holeColumn">13</div>
+                    <div class="holeColumn">14</div>
+                    <div class="holeColumn">15</div>
+                    <div class="holeColumn">16</div>
+                    <div class="holeColumn">17</div>
+                    <div class="holeColumn">18</div>
+                </div>
+            </div>
+            <div class="column5">In Total</div>
+            <div class="column6">Total</div>
+        </div>
+        <div class="row" id="parRow">
+            <div class="column1">Par</div>
+            <div class="column2">
+                <div class="front9Row">
+                    <div class="holeColumn">1</div>
+                    <div class="holeColumn">2</div>
+                    <div class="holeColumn">3</div>
+                    <div class="holeColumn">4</div>
+                    <div class="holeColumn">5</div>
+                    <div class="holeColumn">6</div>
+                    <div class="holeColumn">7</div>
+                    <div class="holeColumn">8</div>
+                    <div class="holeColumn">9</div>
+                </div>
+            </div>
+            <div class="column3">Out Total</div>
+            <div class="column4">
+                <div class="back9Row">
+                    <div class="holeColumn">10</div>
+                    <div class="holeColumn">11</div>
+                    <div class="holeColumn">12</div>
+                    <div class="holeColumn">13</div>
+                    <div class="holeColumn">14</div>
+                    <div class="holeColumn">15</div>
+                    <div class="holeColumn">16</div>
+                    <div class="holeColumn">17</div>
+                    <div class="holeColumn">18</div>
+                </div>
+            </div>
+            <div class="column5">In Total</div>
+            <div class="column6">Total</div>
+        </div>
+        <div class="row" id="scoresRow">
+            <div class="front9">
+                <div class="nameColumn column1">
+                    <div class="nameRow" id="nameRow1">Names</div>
+                    <div class="nameRow" id="nameRow2">Pete</div>
+                    <div class="nameRow" id="nameRow3">Tyler</div>
+                    <div class="nameRow" id="nameRow4">Steven</div>
+                    <div class="nameRow" id="nameRow5">Benny</div>
+                </div>
+                <div class="frontScoreColumn">
+                    <div class="frontScoreRow" id="frontScoreRow1">Score</div>
+                    <div class="frontScoreRow" id="frontScoreRow2">1</div>
+                    <div class="frontScoreRow" id="frontScoreRow3">2</div>
+                    <div class="frontScoreRow" id="frontScoreRow4">3</div>
+                    <div class="frontScoreRow" id="frontScoreRow5">4</div>
+                </div>
+                <div class="frontTotalColumn">
+                    <div class="frontTotalRow" id="frontTotalRow1">Out Total</div>
+                    <div class="frontTotalRow" id="frontTotalRow2">(function add out scores)=1</div>
+                    <div class="frontTotalRow" id="frontTotalRow3">(function add out scores)=2</div>
+                    <div class="frontTotalRow" id="frontTotalRow4">(function add out scores)=3</div>
+                    <div class="frontTotalRow" id="frontTotalRow5">(function add out scores)=4</div>
+                </div>
+            </div>
+            <div class="back9">
+                <div class="backScoreColumn">
+                    <div class="backScoreRow" id="backScoreRow1">Score</div>
+                    <div class="backScoreRow" id="backScoreRow2">4</div>
+                    <div class="backScoreRow" id="backScoreRow3">3</div>
+                    <div class="backScoreRow" id="backScoreRow4">2</div>
+                    <div class="backScoreRow" id="backScoreRow5">1</div>
+                </div>
+                <div class="backTotalColumn">
+                    <div class="backTotalRow" id="backTotalRow1">In Total</div>
+                    <div class="backTotalRow" id="backTotalRow2">(function add in scores)=4</div>
+                    <div class="backTotalRow" id="backTotalRow3">(function add in scores)=3</div>
+                    <div class="backTotalRow" id="backTotalRow4">(function add in scores)=2</div>
+                    <div class="backTotalRow" id="backTotalRow5">(function add in scores)=1</div>
+                </div>
+                <div class="finalTotalColumn">
+                    <div class="finalTotalRow" id="finalTotalRow1">Final Score</div>
+                    <div class="finalTotalRow" id="finalTotalRow2">(Function out Total + in Total)=5</div>
+                    <div class="finalTotalRow" id="finalTotalRow3">(Function out Total + in Total)=5</div>
+                    <div class="finalTotalRow" id="finalTotalRow4">(Function out Total + in Total)=5</div>
+                    <div class="finalTotalRow" id="finalTotalRow5">(Function out Total + in Total)=5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

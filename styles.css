@@ -1,3 +1,81 @@
 .scoresRow{
     display:flex;
 }
+.front9{
+    display:flex;
+}
+.back9{
+    display:flex;
+}
+.row{
+    display:flex;
+}
+#scoresRow{
+    display:flex;
+}
+.column1{
+    width:100px;
+}
+.column2{
+    display:table;
+    width: 33%;
+}
+.column3{
+    width: 9%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.column4{
+    display:table;
+    width: 33%;
+}
+.column5{
+    width: 9%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.column6{
+    width: 9%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.scoreCard{
+    margin:auto;
+    width:65%;
+}
+.holeColumn{
+    display:table-cell;
+    text-align:center;
+}
+.front9Row{
+    display:table-row;
+}
+.back9Row{
+    display:table-row;
+}
+
+.total{
+    text-align: center;
+}
+.holeBorder{
+    border-left: 1px groove lightgrey;
+    border-right: 1px groove lightgrey;
+}
+.borderedRow{
+    border-top: 5px groove lightgrey;
+    border-bottom: 5px groove lightgrey;
+}
+.table{
+    width: 90%;
+    border: 1px groove lightgrey;
+    border-top: 5px groove lightgrey;
+}
+td{
+    text-align:center;
+}
+[contenteditable]:focus {
+    outline: 0 solid transparent;
+}

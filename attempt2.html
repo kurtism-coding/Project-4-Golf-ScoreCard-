@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Golf ScoreCard</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="myjs.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <table class="table table-striped">
+        <tr>
+            <th>Hole #</th>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <th class="total">Out Total</th>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <th class="total">In Total</th>
+            <th class="total">Sum</th>
+        </tr>
+        <tr>
+            <th>Yardage</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="total"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="total"></th>
+            <th class="total"></th>
+        </tr>
+        <tr>
+            <th>Handicap</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="total"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="total"></th>
+            <th class="total"></th>
+        </tr>
+        <tr>
+            <th>Par</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="total"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th class="total"></th>
+            <th class="total"></th>
+        </tr>
+        <tr class="borderedRow">
+            <th class="holeBorder">Hole #</th>
+            <td class="holeBorder">1</td>
+            <td class="holeBorder">2</td>
+            <td class="holeBorder">3</td>
+            <td class="holeBorder">4</td>
+            <td class="holeBorder">5</td>
+            <td class="holeBorder">6</td>
+            <td class="holeBorder">7</td>
+            <td class="holeBorder">8</td>
+            <td class="holeBorder">9</td>
+            <th class="total holeBorder">Out Total</th>
+            <td class="holeBorder">10</td>
+            <td class="holeBorder">11</td>
+            <td class="holeBorder">12</td>
+            <td class="holeBorder">13</td>
+            <td class="holeBorder">14</td>
+            <td class="holeBorder">15</td>
+            <td class="holeBorder">16</td>
+            <td class="holeBorder">17</td>
+            <td class="holeBorder">18</td>
+            <th class="total holeBorder">In Total</th>
+            <th class="total holeBorder">Final Score</th>
+        </tr>
+        <tr>
+            <td contenteditable="true">Kurtis</td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <th class="total"></th>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <th class="total"></th>
+            <th class="total"></th>
+        </tr>
+        <tr>
+            <td contenteditable="true">Tyler</td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <th class="total"></th>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <th class="total"></th>
+            <th class="total"></th>
+        </tr>
+        <tr>
+            <td contenteditable="true">Alex</td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <th class="total"></th>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <th class="total"></th>
+            <th class="total"></th>
+        </tr>
+        <tr>
+            <td contenteditable="true">Jared</td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <th class="total"></th>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <td class="inputHolder" contenteditable="true"></td>
+            <th class="total"></th>
+            <th class="total"></th>
+        </tr>
+    </table>
+</body>
+</html>
