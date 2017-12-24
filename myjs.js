@@ -34,7 +34,12 @@ function getCourseInfo(){
 }
 function outTotal(player){
     console.log("outTotal called");
-    document.getElementById("player" + player + "Out").innerHTML = ;
+    let i;
+    let outTotal;
+    for (i=0;i<9;i++){
+        outTotal += Number($("#p" + player + "h" + i).val())
+    }
+    document.getElementById("player" + player + "Out").innerHTML = outTotal;
 }
 
 function inTotal(player){
