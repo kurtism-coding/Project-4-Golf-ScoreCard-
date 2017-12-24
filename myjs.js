@@ -17,7 +17,7 @@ function loadMe() {
         }
     });
 }
-/*function outTotal(){
+/*function outTotal(player){
     let player1 = document.GetElementById("player1");
     let player2 = document.GetElementById("player2");
     let player3 = document.GetElementById("player3");
@@ -35,13 +35,5 @@ function inTotal(player){
 function totals(player){
 
 }
-function buildCard(mytee){}
 
-function fillCard(){}
-
-function deletePlayer(){}
-
-function getCourse(){}
-
-function updateScore(){}
 loadMe();
