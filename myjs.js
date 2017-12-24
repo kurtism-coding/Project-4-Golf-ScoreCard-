@@ -17,6 +17,7 @@ function loadMe() {
 function getCourseInfo(){
     $.get("https://golf-courses-api.herokuapp.com/courses/" + courseId, function(data){
         courseData = JSON.parse(data);
+        fillCardData();
         //console.log(courseData);
     })
 }
@@ -59,4 +60,3 @@ function totals(player){
 }
 loadMe();
 getCourseInfo();
-fillCardData();
