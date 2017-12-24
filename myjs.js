@@ -23,8 +23,8 @@ function getCourseInfo(){
 function fillCardData(){
     for(y=1;y<19;y++){
         document.getElementById("y" + y).innerHTML = courseData.course.holes[y-1].tee_boxes[2].yards;
-        //document.getElementById("h" + y).innerHTML = courseData.course.holes[y-1].
-        //document.getElementById("p" + y).innerHTML = courseData.course.holes[y-1].
+        document.getElementById("h" + y).innerHTML = courseData.course.holes[y-1].tee_boxes[2].hcp;
+        document.getElementById("p" + y).innerHTML = courseData.course.holes[y-1].tee_boxes[2].par;
     }
 }
 function outTotal(player){
