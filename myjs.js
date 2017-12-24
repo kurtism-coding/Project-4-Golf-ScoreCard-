@@ -1,5 +1,15 @@
 let closeCourses;
-let local_obj= {latitude:40.4426135, longitude: -111.8631116, radius:100};
+let local_obj = {latitude:40.4426135, longitude: -111.8631116, radius:100};
+let courseId = 11819;
+let p1Out;
+let p2Out;
+let p3Out;
+let p4Out;
+let p1In;
+let p2In;
+let p3In;
+let p4In;
+
 //this is the data I'm sending to the API
 
 //this is sending the data to the api, having it return data in the form of JSON, parsing the data into a Javascript
@@ -17,23 +27,24 @@ function loadMe() {
         }
     });
 }
-/*function outTotal(player){
-    let player1 = document.GetElementById("player1");
-    let player2 = document.GetElementById("player2");
-    let player3 = document.GetElementById("player3");
-    let player4 = document.GetElementById("player4");
-    player1 = $("#p1h1").val();
-
-    for (i = 0; i < 18; i++) {
-        text += cars[i] + "<br>";
-    }
+function getCourseInfo(){
+    $.get("https://golf-courses-api.herokuapp.com/courses/" + courseId, function(data){
+        //console.log(data);
+    })
 }
-*/
-function inTotal(player){
+function outTotal(player){
+    console.log("outTotal called");
+    document.getElementById("player" + player + "Out").innerHTML = ;
+}
 
+function inTotal(player){
+    console.log("inTotal called");
+    document.getElementById("player" + player + "In").innerHTML = ;
 }
 function totals(player){
-
+    console.log("totals called");
+    document.getElementById("player" + player + "Total").innerHTML = ;
 }
 
-loadMe();
+//loadMe();
+getCourseInfo();
