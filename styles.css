@@ -79,3 +79,9 @@ td{
 [contenteditable]:focus {
     outline: 0 solid transparent;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    width: 20px;
+}
