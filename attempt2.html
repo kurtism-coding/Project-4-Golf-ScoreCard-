@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="card">
     <table class="table table-striped">
         <tr id="topHoleRow">
             <th>Hole #</th>
@@ -136,7 +137,7 @@
             <th class="total holeBorder">Final Score</th>
         </tr>
         <tr id="player1Row">
-            <td contenteditable="true"></td>
+            <td contenteditable="true" id="player1"></td>
             <td class="inputHolder" onkeyup="outTotal(1)" id="p1h1" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="outTotal(1)" id="p1h2" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="outTotal(1)" id="p1h3" contenteditable="true"></td>
@@ -155,12 +156,12 @@
             <td class="inputHolder" onkeyup="inTotal(1); totals(1)" id="p1h15" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="inTotal(1); totals(1)" id="p1h16" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="inTotal(1); totals(1)" id="p1h17" contenteditable="true"></td>
-            <td class="inputHolder" onkeyup="inTotal(1); totals(1)" id="p1h18" contenteditable="true"></td>
+            <td class="inputHolder" onkeyup="inTotal(1); totals(1); congrats(1)" id="p1h18" contenteditable="true"></td>
             <th class="total" id="player1In"></th>
             <th class="total" id="player1Total"></th>
         </tr>
         <tr id="player2Row">
-            <td contenteditable="true"></td>
+            <td contenteditable="true" id="player2"></td>
             <td class="inputHolder" onkeyup="outTotal(2); totals(2)" id="p2h1" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="outTotal(2); totals(2)" id="p2h2" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="outTotal(2); totals(2)" id="p2h3" contenteditable="true"></td>
@@ -179,12 +180,12 @@
             <td class="inputHolder" onkeyup="inTotal(2); totals(2)" id="p2h15" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="inTotal(2); totals(2)" id="p2h16" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="inTotal(2); totals(2)" id="p2h17" contenteditable="true"></td>
-            <td class="inputHolder" onkeyup="inTotal(2); totals(2)" id="p2h18" contenteditable="true"></td>
+            <td class="inputHolder" onkeyup="inTotal(2); totals(2); congrats(2)" id="p2h18" contenteditable="true"></td>
             <th class="total" id="player2In"></th>
             <th class="total" id="player2Total"></th>
         </tr>
         <tr id="player3Row">
-            <td contenteditable="true"></td>
+            <td contenteditable="true" id="player3"></td>
             <td class="inputHolder" onkeyup="outTotal(3); totals(3)" id="p3h1" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="outTotal(3); totals(3)" id="p3h2" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="outTotal(3); totals(3)" id="p3h3" contenteditable="true"></td>
@@ -203,12 +204,12 @@
             <td class="inputHolder" onkeyup="inTotal(3); totals(3)" id="p3h15" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="inTotal(3); totals(3)" id="p3h16" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="inTotal(3); totals(3)" id="p3h17" contenteditable="true"></td>
-            <td class="inputHolder" onkeyup="inTotal(3); totals(3)" id="p3h18" contenteditable="true"></td>
+            <td class="inputHolder" onkeyup="inTotal(3); totals(3); congrats(3)" id="p3h18" contenteditable="true"></td>
             <th class="total" id="player3In"></th>
             <th class="total" id="player3Total"></th>
         </tr>
         <tr id="player4Row">
-            <td contenteditable="true"></td>
+            <td contenteditable="true" id="player4"></td>
             <td class="inputHolder" onkeyup="outTotal(4); totals(4)" id="p4h1" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="outTotal(4); totals(4)" id="p4h2" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="outTotal(4); totals(4)" id="p4h3" contenteditable="true"></td>
@@ -227,10 +228,15 @@
             <td class="inputHolder" onkeyup="inTotal(4); totals(4)" id="p4h15" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="inTotal(4); totals(4)" id="p4h16" contenteditable="true"></td>
             <td class="inputHolder" onkeyup="inTotal(4); totals(4)" id="p4h17" contenteditable="true"></td>
-            <td class="inputHolder" onkeyup="inTotal(4); totals(4)" id="p4h18" contenteditable="true"></td>
+            <td class="inputHolder" onkeyup="inTotal(4); totals(4); congrats(4)" id="p4h18" contenteditable="true"></td>
             <th class="total" id="player4In"></th>
             <th class="total" id="player4Total"></th>
         </tr>
     </table>
+
+</div>
+<div id="congratsDiv">
+
+</div>
 </body>
 </html>

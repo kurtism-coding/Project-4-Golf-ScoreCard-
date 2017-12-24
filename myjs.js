@@ -58,5 +58,24 @@ function totals(player){
     console.log(total);
     document.getElementById("player" + player + "Total").innerHTML = "" + total + "";
 }
+function congrats(player){
+    console.log("congrats called");
+    let total = Number($("#player" + player + "Total").text());
+    let par = 72;
+    console.log(total);
+    console.log(par);
+    let above = total - par;
+    let under = par - total;
+    if(total < par){
+
+        document.getElementById("congratsDiv").innerHTML = "Congratulations " + $("#player" + player).text() +
+            "! Your score was pretty fantastic! It was " + under + " under par!"
+    } else{
+        document.getElementById("congratsDiv").innerHTML = "Congratulations " + $("#player" + player).text() +
+            "! Your score was pretty bad! It was " + above + " over par!"
+    }
+    document.getElementById("congratsDiv").style.display = "block";
+
+}
 loadMe();
 getCourseInfo();
